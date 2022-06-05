@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 /**
  * main - print alphabet
  */
@@ -10,7 +10,5 @@ int main(void)
         {
                 putchar(alp);
         }
-	putchar("\n");
-
     return (0);
 }
