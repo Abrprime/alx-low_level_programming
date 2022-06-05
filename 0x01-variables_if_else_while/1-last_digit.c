@@ -2,27 +2,32 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main-find out the last digit of the number 
-* compare the last digit of the number
-*Return: retern one of the 3 option
+* main - principal function
+*
+*Return: end the program
 */
 int main(void)
 {
-	int n, lastDigit;
+	int n;
+	int last_dig;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastDigit = n % 10;
-	if (lastDigit > 5)
+
+	last_dig = n % 10;
+
+	if (last_dig > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
+		printf("Last digit of %d is %d and is greater than 5\n", n, last_dig);
 	}
-	else if (lastDigit == 0)
+	else if (last_dig == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is 0\n", n, last_dig);
 	}
-	else 
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
+	else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_dig);
+	}
+
 	return (0);
 }
-
