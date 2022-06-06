@@ -1,18 +1,20 @@
 #include <stdio.h>
 /**
  * main - print alphabet
+ *
+ * Return: end the program
  */
+
 int main(void)
 {
-        char alp;
+	char l = 97;
 
-	while (alp <= 'z')
-	{       
-		alp = 'a';
-                putchar(alp);
-		alp = ++alp;
+	while (l <= 122)
+	{
+		putchar(l);
+		++l;
 	}
 	putchar('\n');
-	
-    return (0);
+
+	return (0);
 }
