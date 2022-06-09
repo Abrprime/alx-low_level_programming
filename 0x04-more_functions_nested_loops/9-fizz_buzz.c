@@ -19,5 +19,6 @@ int main(void)
 		else
 			pritf("%d ", i);
 	}
+	printf("Buzz\n");
 	return (0);
 }
