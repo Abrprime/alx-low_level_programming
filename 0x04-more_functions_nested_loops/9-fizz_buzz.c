@@ -1,24 +1,25 @@
 #include <stdio.h>
 /**
- * main - function
+ * main - main function
  *
- * Return: value
+ * Return: end program
  */
 int main(void)
 {
-	int i;
+	int n = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (n < 100)
 	{
-		if (i % 15 == 0)
+		if (n % 15 == 0)
 			printf("FizzBuzz ");
-		else if (i % 5 == 0)
+		else if (n % 5 == 0)
 			printf("Buzz ");
-		else if (i % 3 == 0)
+		else if (n % 3 == 0)
 			printf("Fizz ");
 		else
-			printf("%d ", i);
+			printf("%d ", n);
+		n++;
 	}
-	printf("\n");
+	printf("Buzz\n");
 	return (0);
 }
