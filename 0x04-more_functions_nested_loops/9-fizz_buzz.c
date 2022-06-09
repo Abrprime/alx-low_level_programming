@@ -11,13 +11,13 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
-			pritf("Fizz");
+			pritf("Fizz ");
 		else if (i % 5 == 0)
-			printf("Buzz");
+			printf("Buzz ");
 		else if ((i % 3) == 0 && (i % 5) == 0)
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		else
-			pritf("%d", i);
+			pritf("%d ", i);
 	}
 	return (0);
 }
