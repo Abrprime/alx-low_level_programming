@@ -2,7 +2,7 @@
 /**
  * _abs - main function
  *
- * @int: parameter
+ * @n: parameter
  * Return: value
  *
  */
@@ -10,11 +10,7 @@ int _abs(int n)
 {
 
 	if (n < 0)
-	{
-		n = n * -1;
-		_putchar(n);
-	}
+		return (-n);
 	else
-		_putchar(n);
-	retrun (0);
+		return (n);
 }
