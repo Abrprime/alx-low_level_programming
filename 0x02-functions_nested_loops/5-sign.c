@@ -8,7 +8,6 @@
  */
 int print_sign(int n)
 {
-	signed int n;
 
 	if (n > 0)
 	{
