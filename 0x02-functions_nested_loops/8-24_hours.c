@@ -1,52 +1,26 @@
 #include "main.h"
 /**
- * jack_bauer - main function
- *
+ * jack_bauer - function
  */
 void jack_bauer(void)
 {
-	char a;
-	char b;
-	char c;
-	char d;
+	int hour, h1, h2, min, m1, m2;
 
-	for (a = 48; a < 51; a++)
+	for (hour = 0; hour <= 23; ++hour)
 	{
-		if (a < 49)
+		h1 = hour / 10;
+		h2 = hour % 10;
+		for (min = 0; min < 60; ++min)
 		{
-			for (b = 48;  b < 58; b++)
-			{
-				for (c = 48; c < 53; c++)
-				{
-					for (d = 48; d < 58; d++)
-					{
-						_putchar(a);
-						_putchar(b);
-						_putchar(':');
-						_putchar(c);
-						_putchar(d);
-						_putchar(10);
-					}
-				}
-			}
+			m1 = min / 10;
+			m2 = min % 10;
+			_putchar(h1 + '0');
+			_putchar(h2 + '0');
+			_putchar(':');
+			_putchar(m1 + '0');
+			_putchar(m2 + '0');
+			_putchar(10);
 		}
-		else
-		{
-			for (b = 48;  b < 52; b++)
-			{
-				for (c = 48; c < 54; c++)
-				{
-					for (d = 48; d < 58; d++)
-					{
-						_putchar(a);
-						_putchar(b);
-						_putchar(':');
-						_putchar(c);
-						_putchar(d);
-						_putchar(10);
-					}
-				}
-			}
-		}
+		min = 0;
 	}
 }
