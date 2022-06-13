@@ -6,8 +6,11 @@
  */
 int _strlen(char *s)
 {
-	int n;
+	int n = 0;
 
-	n = sizeof(s);
-	return (n / 4);
+	while (s[n] != '\0')
+	{
+		n++;
+	}
+	return (n);
 }
