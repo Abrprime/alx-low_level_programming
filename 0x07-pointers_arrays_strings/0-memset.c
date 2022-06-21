@@ -2,17 +2,19 @@
 /**
  * _memset - main functin
  * @s: parameter
- * @b: parameter 
+ * @b: parameter
  * @n: parameter
  * Return: return s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	char *start = s;
-	
-	for (i = 0; i < n; i++)
+
+	while (i < n)
 	{
 		*s++ = b;
-	}	
-}	return (start);
+		i++;
+	}
+	return (start);
+}
