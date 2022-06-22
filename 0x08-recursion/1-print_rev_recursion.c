@@ -12,5 +12,5 @@ void _print_rev_recursion(char *s)
 		_putchar(*s);
 	}
 	_putchart(10);
-	return ();
+	return;
 }
