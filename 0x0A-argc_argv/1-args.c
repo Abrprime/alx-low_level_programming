@@ -1,32 +1,17 @@
-#include <stdlib.h>
-
+#include "main.h"
+#include <stdio.h>
 /**
- * _strdup - Return pointer to a new string that duplicates given string,
- * allocate mem w/ malloc
- * @str: String to duplicate
+ * main - prints the number of arguments.
+ * @argc: argument count
+ * @argv: Argument vector for values
  *
- * Return: Pointer to new string, NULL if failed to make memory
+ *
+ * Return: Always to 0
  */
-char *_strdup(char *str)
+int main(int argc, char *argv[])
 {
-	char *nstr;
-	unsigned int i, len;
-
-	if (str == NULL)
-		return (NULL);
-	i = len = 0;
-	while (str[len] != '\0')
-	{
-		len++;
-	}
-	len++;
-	nstr = malloc(len * sizeof(*str));
-	if (nstr == NULL)
-		return (NULL);
-	while (i <= len)
-	{
-		nstr[i] = str[i];
-		i++;
-	}
-	return (nstr);
+	(void)argv;
+	argc--;
+	printf("%d\n", argc);
+	return (0);
 }
