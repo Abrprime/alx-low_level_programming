@@ -1,7 +1,8 @@
 #ifndef FUNCTION_LIKE_MACRO_H
 #define FUNCTION_LIKE_MACRO_H
 
-/** File: 4-sum.h
+/**
+ * Fil
  * Desc: Header file that defines a function-like macro ABS(x)
  *       that computes the absolute value of a number x.
  */
